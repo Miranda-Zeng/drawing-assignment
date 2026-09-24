@@ -9,8 +9,17 @@
     #e89a83 65%,
     #b86167 100%);
     /* background-color: aliceblue; */
-    /* overflow: hidden; */
+    overflow: hidden;
     
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
 }
 
 /* #sunset{
