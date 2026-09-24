@@ -207,6 +207,7 @@ body {
 
 #top{
     position: absolute;
+    z-index: 1;
     bottom: 450px;
     left:380px;
     width: 60px;
@@ -216,7 +217,7 @@ body {
 
 #spire{
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
     bottom: 5px;
     left:5%;
     width: 60px;
