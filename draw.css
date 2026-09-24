@@ -48,7 +48,17 @@ body {
     left: -10px;
     width: 100px;
     height:250px;
-    background-color: black;
+    background:repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 8px,
+        rgba(220, 225, 230, 0.2) 9px),
+      repeating-linear-gradient(
+        to right,
+        transparent 0px,
+        transparent 14px,
+        rgba(220, 225, 230, 0.2) 15px), 
+        black;
 }
 
 #BuildingTwo{
@@ -58,7 +68,17 @@ body {
     left: 40px;
     width: 100px;
     height:300px;
-    background-color: rgb(31, 29, 29);
+    background:repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 8px,
+        rgba(220, 225, 230, 0.15) 9px),
+      repeating-linear-gradient(
+        to right,
+        transparent 0px,
+        transparent 14px,
+        rgba(220, 225, 230, 0.2) 15px),  
+        rgb(31, 29, 29);
 }
 
 #BuildingThree{
@@ -68,7 +88,17 @@ body {
     left: 100px;
     width: 100px;
     height:200px;
-    background-color: rgb(0, 0, 0);
+    background:repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 8px,
+        rgba(220, 225, 230, 0.15) 9px),
+      repeating-linear-gradient(
+        to right,
+        transparent 0px,
+        transparent 14px,
+        rgba(220, 225, 230, 0.2) 15px),  
+        rgb(0, 0, 0);
 }
 
 #BuildingFour{
@@ -108,6 +138,18 @@ body {
     
 }
 
+.windows{
+    position: absolute;
+    z-index: 2;
+    width: 10px;
+    height: 6px;
+    background-color: rgba(223, 222, 209, 0.7);
+}
+
+.light-on {
+    background-color: rgba(255, 220, 140, 0.8);
+  }
+
 #BuildingFive{
     position: absolute;
     z-index: 3;
@@ -144,6 +186,18 @@ body {
     filter: blur(3px);
 }
 
+.WindowOnFive{
+    position: absolute;
+    z-index: 2;
+    width: 6px;
+    height: 8px;
+    background-color: rgba(223, 222, 209, 0.873);
+}
+
+.light-on2{
+    background-color: rgba(242, 200, 238, 0.8); 
+}
+
 
 #WTC{
     position: absolute;
@@ -159,7 +213,17 @@ body {
         85% 0%,
         100% 40%,
         90% 110%);
-    background-color: rgb(35,35,40);
+    background:repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 8px,
+        rgba(220, 225, 230, 0.15) 9px),
+      repeating-linear-gradient(
+        to right,
+        transparent 0px,
+        transparent 14px,
+        rgba(220, 225, 230, 0.12) 15px),
+        rgb(35,35,40);
 }
 
 #glass-left{
@@ -192,7 +256,12 @@ body {
     position: absolute;
     width: 122px;
     height: 452px;
-    background-color: rgb(157, 160, 163,0.8);
+    /* background-color: rgb(157, 160, 163,0.8); */
+    background: linear-gradient(
+        to bottom,
+        rgba(205, 175, 175, 0.35),
+        rgba(190, 120, 125, 0.55),
+        rgba(120, 95, 110, 0.7));;
     clip-path: polygon(48% 0%,10% 100%,0% 98%);  
 }
 
@@ -238,35 +307,41 @@ body {
 }
 
 
-/* #FrontOne{
+#FrontOne{
     position: absolute;
-    bottom:-120px;
-    left: -100px;
-    width: 380px;
-    height:300px;
-    border-radius: 50%;
+    top:80px;
+    left: 280px;
+    width: 150px;
+    height:40px;
+    border-radius: 70%;
     z-index: 3;
-    background-color: rgb(208, 224, 246);
+    background-color: rgb(230,181,166);
+    filter: blur(10px);
 }
 
 #FrontTwo{
     position: absolute;
-    bottom:-220px;
-    left: 150px;
-    width: 300px;
-    height:450px;
-    border-radius: 60%;
+    top:100px;
+    left: 450px;
+    width: 180px;
+    height:80px;
+    border-radius: 80%;
     z-index: 3;
-    background-color: rgb(208, 224, 246);
+    background-color: rgb(208,160,150);
+    /* clip-path: polygon(50% 0%, 97% 38%, 71% 48%, 68% 69%, 100% 81%, 21% 91%, 19% 71%, 51% 31%, 17% 12%); */
+    filter: blur(12px);
+    opacity: 0.8;
 }
 
 #FrontThree{
     position: absolute;
-    bottom:-220px;
-    left: 350px;
-    width: 300px;
-    height:400px;
+    top:250px;
+    left: 380px;
+    width: 120px;
+    height:40px;
     border-radius: 60%;
     z-index: 3;
-    background-color: rgb(208, 224, 246);
-} */
+    background-color: rgb(230,181,166);
+    filter: blur(10px);
+}
+
