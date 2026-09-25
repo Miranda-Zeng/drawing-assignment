@@ -21,25 +21,17 @@ body {
     overflow: hidden;  
 }
 
-
-/* #sunset{
+.foreground{
     position: absolute;
-    bottom:0px;
-    left: 0px;
-    width: 600px;
-    height:400px;
-    background-color: rgba(241,124,81,0.8);
-} */
+    z-index: 3;
+    bottom: -40px;
+    left: -30px;
+    width: 700px;
+    height: 120px;
+    background-color: rgb(23, 23, 27);
+    transform: skewY(3deg);
+}
 
-/* #cloud{
-    position: absolute;
-    z-index: 1;
-    bottom:250px;
-    left: 0px;
-    width: 600px;
-    height:190px;
-    background-color: rgb(190, 98, 116);
-}  */
 
 #BuildingOne{
     position: absolute;
@@ -206,13 +198,7 @@ body {
     left: 350px;
     width: 120px;
     height:450px;
-    clip-path: polygon(
-        10% 110%,
-        0% 40%,
-        15% 0%,
-        85% 0%,
-        100% 40%,
-        90% 110%);
+    clip-path: polygon(10% 110%,0% 40%,15% 0%,85% 0%,100% 40%,90% 110%);
     background:repeating-linear-gradient(
         to bottom,
         transparent 0px,
